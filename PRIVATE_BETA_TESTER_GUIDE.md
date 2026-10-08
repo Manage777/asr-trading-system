@@ -28,3 +28,16 @@ Send screenshots, NinjaTrader log/trace excerpts (with private information remov
 
 ## Website release policy
 The main branch and live website remain unchanged until the software is ready for the private beta. This draft is for internal review.
+
+## One-laptop licensing decision (pending vendor confirmation)
+NinjaTrader's legacy machine-ID vendor licensing documents explicitly state PC machine-ID binding. The current user-based VendorLicense(productID) documentation confirms account-based entitlement checks but does not document strict single-device enforcement. ASR Product ID 2612 currently uses user-based licensing. Do not claim or sell one-laptop enforcement until tested.
+
+Questions for Vendor Support:
+- Can user-based licenses enforce exactly one active machine per customer?
+- Can ASR use legacy machine-ID licensing or a supported additional device check alongside VendorLicense(2612)?
+- How should a customer request a machine transfer?
+- How can we verify invalid-license behavior and second-device rejection?
+
+References:
+- https://docs.ninjatrader.com/ninjascript/user_based_licensing_quick_start_guide
+- https://ninjatrader.com/support/helpGuides/nt8/licensing_user_authentication.htm
