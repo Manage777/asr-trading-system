@@ -1,0 +1,30 @@
+# ASR Trading System — Private Beta Tester Guide (Draft)
+
+**Status:** Preparation only. Do not distribute until the compiled NinjaTrader 8 add-on is tested and vendor licensing is confirmed.
+
+## Included in the planned beta
+- ASRPriceBars (V16 baseline, pending final chart validation)
+- ASR indicators, including ASRVolatilityV3
+- ASRAutoTrader: Auto A (reversal and pullback), Auto B (momentum and trend continuation), Auto C (inside-out/second-bar continuation)
+- Manual execution and configurable stop, target, trail and close-all controls
+
+## Before the tester receives software
+1. Compile and validate all NinjaScript components in NinjaTrader Desktop 8.
+2. Run playback checks for bar construction, entries, stops, targets, order cancellation, emergency Close All and mode switching.
+3. Integrate NinjaTrader vendor licensing using ASR Product ID 2612 and verify activation on a separate account.
+4. Create a time-limited tester license only after the build is ready.
+5. Export a compiled, protected, vendor-licensed customer ZIP, not source code.
+6. Test a clean installation, uninstall and license expiry behavior.
+7. Confirm the beta agreement, support channel and risk disclosures.
+
+## Playback results to record
+Date, instrument, session (exchange/local timezone), NinjaTrader version, ASR build, bar size, Auto mode, entry/exit settings, number of trades, net P&L, commissions/slippage assumptions, maximum drawdown, screenshots and any order errors.
+
+## Tester safety
+Use **Playback or Sim101 only**. Do not connect the beta to live trading accounts. Results are hypothetical/simulated and do not predict future performance. No profits are guaranteed.
+
+## Reporting
+Send screenshots, NinjaTrader log/trace excerpts (with private information removed), and reproducible steps to support@asrtradingsystem.com.
+
+## Website release policy
+The main branch and live website remain unchanged until the software is ready for the private beta. This draft is for internal review.
