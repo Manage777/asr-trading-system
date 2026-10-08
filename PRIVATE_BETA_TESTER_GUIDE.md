@@ -11,10 +11,10 @@
 ## Before the tester receives software
 1. Compile and validate all NinjaScript components in NinjaTrader Desktop 8.
 2. Run playback checks for bar construction, entries, stops, targets, order cancellation, emergency Close All and mode switching.
-3. Integrate NinjaTrader vendor licensing using ASR Product ID 2612 and verify activation on a separate account.
+3. Integrate NinjaTrader vendor licensing using ASR Product ID 2612 and verify activation on a separate account. Verify whether the licensing system can enforce one authorized laptop per license; do not claim device locking until confirmed. If unsupported, evaluate a compatible additional device-binding mechanism and test transfers/reinstallation.
 4. Create a time-limited tester license only after the build is ready.
 5. Export a compiled, protected, vendor-licensed customer ZIP, not source code.
-6. Test a clean installation, uninstall and license expiry behavior.
+6. Test a clean installation, uninstall, license expiry and attempted activation on a second laptop. Document the device-transfer and reactivation process.
 7. Confirm the beta agreement, support channel and risk disclosures.
 
 ## Playback results to record
