@@ -41,3 +41,13 @@ Questions for Vendor Support:
 References:
 - https://docs.ninjatrader.com/ninjascript/user_based_licensing_quick_start_guide
 - https://ninjatrader.com/support/helpGuides/nt8/licensing_user_authentication.htm
+
+## Single-laptop licensing implementation decision — October 2026
+Official NinjaTrader documentation confirms that the legacy vendor licensing system binds a license to a user-defined prefix and PC Machine ID. The current VendorLicense(2612) user-based system authenticates the NinjaTrader account, but does not document one-machine-only enforcement. Do not combine legacy and user-based APIs without vendor guidance.
+
+**Decision:** Request activation of NinjaTrader's supported machine-ID-based vendor licensing for ASR Trading System, or a documented equivalent for Product ID 2612. Keep the existing compiled candidate unchanged until NinjaTrader supplies vendor credentials and integration instructions. After integrating, compile, export a new assembly, and test authorized machine, unauthorized second machine, license expiry and machine replacement.
+
+Official references:
+- https://docs.ninjatrader.com/ninjascript/licensing_user_authentication
+- https://docs.ninjatrader.com/ninjascript/user_based_licensing_quick_start_guide
+- https://developer.ninjatrader.com/blog/the-continued-evolution-of-the-ninjatrader-ecosystem
