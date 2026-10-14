@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; script-src-attr 'none'; style-src 'self'; style-src-attr 'none'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'self' https://formsubmit.co; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ASR Trading System | Adaptive Structure & Response</title>
 <meta name="description" content="ASR Trading System develops professional NinjaTrader 8 futures trading software combining adaptive price structure, market intelligence and configurable execution control.">
 <link rel="stylesheet" href="styles.css">
@@ -11,143 +11,7 @@
 <meta property="og:description" content="Explore the actual ASR NinjaTrader 8 workspace. Custom price bars, market-context indicators and configurable execution. Private beta in preparation.">
 <meta property="og:url" content="https://asrtradingsystem.com/">
 <meta property="og:type" content="website">
-<style>
-/* Final vendor-review legibility pass */
-.hero-visual{background:#10161a!important;color:#fff!important}
-.visual-top,.visual-foot{color:#c4cbd0!important;font-size:11px!important;line-height:1.45!important;letter-spacing:.14em!important;font-weight:800!important}
-.live{color:#c5dccd!important;font-size:11px!important}.live i{width:8px!important;height:8px!important;box-shadow:0 0 0 5px rgba(134,164,147,.16)!important}
-.visual-core>small{display:block;color:#b7c0c6!important;font-size:11px!important;line-height:1.4!important;font-weight:750!important;letter-spacing:.16em!important;margin-bottom:10px!important}
-.workflow-item{padding:24px 0 22px!important;border-bottom:1px solid #4a555c!important}
-.workflow-item strong{color:#758087!important;font-size:50px!important;font-weight:800!important;line-height:1!important}
-.workflow-item p{color:#fffdf7!important;font-size:16px!important;line-height:1.3!important;letter-spacing:.12em!important;font-weight:850!important;margin:8px 0 10px!important}
-.workflow-item span{display:block;color:#bdc6cb!important;font-size:11px!important;line-height:1.5!important;letter-spacing:.07em!important;font-weight:550!important}
-.hero-visual:before,.hero-visual:after{border-color:#465159!important}
-.release-badge{display:inline-flex!important;align-items:center!important;gap:14px!important;margin-top:25px!important;padding:14px 18px!important;border:1px solid rgba(102,139,118,.42)!important;background:rgba(255,255,255,.20)!important;max-width:100%!important}
-.release-badge>i{display:block!important;width:8px!important;height:8px!important;min-width:8px!important;border-radius:50%!important;background:var(--accent)!important;box-shadow:0 0 0 5px rgba(102,139,118,.10)!important}
-.release-badge>div{display:flex!important;align-items:center!important;gap:16px!important;flex-wrap:wrap!important}.release-badge b{display:block!important;font-size:12px!important;line-height:1.4!important;letter-spacing:.10em!important;white-space:nowrap!important}.release-badge span{display:block!important;font-size:13px!important;line-height:1.45!important;color:#465159!important}
-@media(max-width:980px){.release-badge{width:100%!important}.release-badge>div{gap:7px!important}.release-badge b,.release-badge span{width:100%!important}.hero-visual{display:none!important}}
-
-/* Beta experience enhancements */
-.beta-banner{background:#14231e;color:#e5f2e9;padding:13px 6%;display:flex;gap:18px;align-items:center;justify-content:center;flex-wrap:wrap;font-size:13px;letter-spacing:.02em}
-.beta-banner strong{color:#a9dfb8}.beta-banner a{color:#e5f2e9;text-decoration:underline;text-underline-offset:4px}
-.journey{background:#f5f5f0;padding:90px max(6%,calc((100% - 1200px)/2));color:#1d2828}
-.journey h2,.faq-wrap h2{font-size:clamp(30px,4vw,52px);line-height:1.12;letter-spacing:-.035em;margin:12px 0 18px}
-.journey-lead{max-width:680px;line-height:1.7;color:#4c5a57}
-.journey-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:32px}
-.journey-card{border:1px solid #d7dfd8;background:#fff;padding:30px;min-height:250px;transition:transform .2s,box-shadow .2s}
-.journey-card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(14,37,27,.10)}
-.journey-card small{font-size:12px;color:#577b65;font-weight:800;letter-spacing:.14em}
-.journey-card h3{font-size:25px;margin:20px 0 12px;color:#1b2926}
-.journey-card p{line-height:1.65;color:#53605b}
-.faq-wrap{padding:90px max(6%,calc((100% - 1000px)/2));background:#10191a;color:#fff}
-.faq-wrap .section-label{color:#a2c4ac}
-.faq-wrap details{border-bottom:1px solid #435150;padding:22px 0}
-.faq-wrap summary{cursor:pointer;font-size:18px;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:20px}
-.faq-wrap summary:after{content:'+';color:#a8c7b0;font-size:24px}
-.faq-wrap details[open] summary:after{content:'−'}
-.faq-wrap details p{color:#c4d0cc;max-width:760px;line-height:1.7;margin:15px 0 3px}
-.beta-invite{padding:50px 6%;background:#dce8df;color:#182921;text-align:center}
-.beta-invite h2{font-size:clamp(26px,3vw,42px);margin:0 0 14px}
-.beta-invite p{max-width:660px;margin:0 auto 22px;line-height:1.65}
-.beta-invite a{display:inline-block;background:#1b3327;color:white;padding:15px 26px;text-decoration:none;font-weight:750}
-.beta-invite a:hover{background:#315642}
-@media(max-width:800px){.journey-grid{grid-template-columns:1fr}.journey,.faq-wrap{padding:60px 6%}.journey-card{min-height:0}}
-
-/* ASR professional color refresh */
-:root{--accent:#16858b;--accent2:#54ada7;--paper:#f5f9f8;--paper2:#eaf3f0;--dark:#12313b;--dark2:#0b202a}
-.hero{background:linear-gradient(115deg,#f7fbfa,#e9f4f1)}
-.hero h1 span,.intro h2 em,.price-section h2 em{color:#16858b!important}
-.mark,.nav-cta,.btn.primary{background:#146e77!important;color:#fff!important}
-.hero-visual{background:linear-gradient(145deg,#102b36,#143c42)!important}
-.workflow-item strong{color:#63b8b1!important}
-.workflow-item:nth-child(2) strong{color:#d4a15c!important}
-.workflow-item:nth-child(3) strong{color:#9692d4!important}
-.platform-cards article{border-top:3px solid #16858b}
-.platform-cards article:nth-child(2){border-top-color:#d4a15c}
-.platform-cards article:nth-child(3){border-top-color:#7979b8}
-.execution,.philosophy{background:linear-gradient(135deg,#102630,#164149)!important}
-.intelligence{background:#f7fbfa}
-.release{background:linear-gradient(130deg,#e7f2ee,#f7faf8)}
-
-/* ASR Signature Edition — restrained institutional palette */
-:root{--accent:#16868a;--accent2:#50aaa1;--paper:#f7faf9;--paper2:#eaf2ef;--dark:#112932}
-.hero{background:radial-gradient(ellipse at 65% 18%,rgba(40,148,145,.13),transparent 48%),linear-gradient(125deg,#f8faf9,#edf5f2)}
-.hero h1 span,.intro h2 em,.price-section h2 em{color:#167d83!important}
-.mark,.nav-cta,.btn.primary{background:linear-gradient(120deg,#164d5b,#16868a)!important;color:white!important}
-.nav-cta:hover,.btn.primary:hover{filter:brightness(1.13)}
-.hero-visual{background:linear-gradient(145deg,#102630,#173e45)!important;border-color:#3a6567!important}
-.workflow-item strong{color:#65b7b0!important}
-.workflow-item:nth-child(2) strong{color:#d3a15d!important}
-.workflow-item:nth-child(3) strong{color:#a39ad3!important}
-.platform-cards article{border-top:3px solid #16868a;box-shadow:0 12px 36px rgba(20,57,59,.05)}
-.platform-cards article:nth-child(2){border-top-color:#d3a15d}
-.platform-cards article:nth-child(3){border-top-color:#8882c1}
-.execution,.philosophy{background:linear-gradient(125deg,#102831,#174149)!important}
-.intelligence{background:#f7faf9}
-.release{background:linear-gradient(125deg,#e9f4f0,#f8faf9)}
-.beta-invite{background:linear-gradient(130deg,#102c35,#1a5054);color:#f1f8f6}
-.beta-invite h2{color:#fff}
-.beta-invite p{color:#d6e7e2}
-.beta-invite a{background:linear-gradient(110deg,#d6a764,#ebc48e);color:#172e32}
-.beta-invite a:hover{background:#f0ce9b}
-.beta-form{max-width:720px;margin:32px auto 0;text-align:left;background:#f8faf9;color:#183139;padding:clamp(22px,4vw,40px);border:1px solid #d2e2dc;box-shadow:0 24px 60px rgba(0,0,0,.16)}
-.beta-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.beta-field{display:flex;flex-direction:column;gap:8px;margin-bottom:17px}
-.beta-field label{font-size:12px;font-weight:800;letter-spacing:.06em;color:#26474a}
-.beta-field input,.beta-field select,.beta-field textarea{width:100%;border:1px solid #bbceca;border-radius:3px;padding:13px 14px;background:white;color:#183139;font:inherit;font-size:15px}
-.beta-field input:focus,.beta-field select:focus,.beta-field textarea:focus{outline:2px solid #16868a;outline-offset:2px}
-.beta-form .beta-consent{display:flex;align-items:flex-start;gap:10px;font-size:13px;line-height:1.5;color:#435b5a;margin-bottom:20px}
-.beta-form .beta-consent input{margin-top:4px}
-.beta-form button{border:0;background:#166f77;color:white;font-weight:800;padding:15px 24px;cursor:pointer;width:100%;font-size:14px}
-.beta-form button:hover{background:#10545c}
-.beta-form .form-fine{font-size:12px;color:#59706b;margin:14px 0 0;line-height:1.6}
-@media(max-width:640px){.beta-form-grid{grid-template-columns:1fr}.beta-form{padding:22px}}
-
-/* ASR presentation and accessibility enhancement */
-:focus-visible{outline:3px solid #d6a764!important;outline-offset:4px}
-::selection{background:#c4e7de;color:#102c35}
-.nav{background:rgba(247,250,249,.94);border-bottom:1px solid #dce9e4}
-.nav nav a{position:relative}.nav nav a:hover{color:#14777e}
-.nav nav a:after{content:"";position:absolute;left:0;bottom:-7px;width:0;height:2px;background:#16868a;transition:width .2s}.nav nav a:hover:after{width:100%}
-.hero-meta b{color:#164b53}
-.trustbar{background:#102b35;color:#c4dcd7}
-.journey{background:linear-gradient(180deg,#f0f7f4,#f9fbfa)}
-.journey-card{border:1px solid #d7e7e1;border-top:3px solid #16868a;border-radius:4px}
-.journey-card:nth-child(2){border-top-color:#d6a764}
-.journey-card:nth-child(3){border-top-color:#8882c1}
-.faq-wrap{background:linear-gradient(145deg,#0c252e,#153b42)}
-.faq-wrap details{transition:background .2s;padding-left:12px;padding-right:12px}
-.faq-wrap details:hover{background:rgba(255,255,255,.035)}
-.faq-wrap details[open]{background:rgba(255,255,255,.045)}
-.faq-wrap summary:focus-visible{outline:2px solid #d6a764}
-.feature-spotlight{padding:88px max(6%,calc((100% - 1200px)/2));background:#f7faf9}
-.feature-spotlight h2{font-size:clamp(34px,4vw,58px);letter-spacing:-.045em;line-height:1.05;margin:14px 0 18px;color:#15323a}
-.feature-spotlight>p{color:#4c6667;max-width:710px;line-height:1.7}
-.feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:30px}
-.feature-tile{background:#fff;border:1px solid #d5e3df;border-radius:4px;padding:30px;min-height:280px;box-shadow:0 14px 35px rgba(19,49,56,.045);transition:transform .2s,box-shadow .2s}
-.feature-tile:hover{transform:translateY(-5px);box-shadow:0 20px 45px rgba(19,49,56,.09)}
-.feature-tile .feature-index{font-size:12px;letter-spacing:.16em;font-weight:800;color:#167f85}
-.feature-tile:nth-child(2) .feature-index{color:#a57935}
-.feature-tile:nth-child(3) .feature-index{color:#7770ae}
-.feature-tile h3{font-size:25px;color:#14333b;margin:23px 0 12px}
-.feature-tile p{line-height:1.65;color:#506466}
-.feature-tile a{display:inline-block;color:#116e76;font-weight:800;text-decoration:none;border-bottom:1px solid #9ccbc8;padding-bottom:5px;margin-top:12px}
-.beta-invite{scroll-margin-top:90px}
-@media(max-width:850px){.feature-grid{grid-template-columns:1fr}.feature-tile{min-height:0}.feature-spotlight{padding:65px 6%}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
-
-/* Signature finishing details: keep existing page structure */
-.nav{box-shadow:0 7px 28px rgba(13,36,43,.045)}
-.hero h1{font-weight:730;text-wrap:balance}
-.hero .lead{color:#405d61}
-.section-label,.eyebrow{color:#4a7779}
-.platform-cards article,.journey-card,.feature-tile{transition:transform .22s ease,box-shadow .22s ease}
-.platform-cards article:hover{transform:translateY(-3px);box-shadow:0 22px 45px rgba(15,54,62,.09)}
-.engine-list>div{border-color:rgba(145,192,188,.24)}
-.beta-form{border-top:3px solid #cba36d}
-.nav-cta,.btn.primary{box-shadow:0 6px 16px rgba(13,92,99,.14)}
-@media(prefers-reduced-motion:reduce){.platform-cards article:hover{transform:none}}
-</style>
+<link rel="stylesheet" href="page-details.css">
 <link rel="stylesheet" href="website-refinements.css"><link rel="stylesheet" href="beta-guide.css">
 <script src="website.js" defer></script>
 </head>
@@ -172,11 +36,12 @@
 <section class="section price-section" id="pricebars"><div class="section-label">03 — PRICE STRUCTURE</div><div class="price-grid"><div><h2>Price first.<br><em>Structure in focus.</em></h2><p class="large-copy">ASRPriceBars organize charts around price movement rather than a conventional fixed-time interval.</p></div><div class="spec-stack"><div><span>01</span><b>Price-driven construction</b><p>Chart formation responds to movement in price rather than waiting for a time interval to expire.</p></div><div><span>02</span><b>Configurable structures</b><p>Multiple configurations support different chart scales and trading approaches.</p></div><div><span>03</span><b>Native ASR workflow</b><p>Designed to operate with the ASR analysis and execution environment.</p></div></div></div></section>
 <section class="intelligence section" id="intelligence"><div class="section-label">04 — MARKET INTELLIGENCE</div><div class="section-head"><h2>Context before action.</h2><p>ASR's analysis layer organizes different dimensions of market behaviour into a cleaner decision environment.</p></div><div class="intel-grid"><article><small>MARKET STATE</small><b>Trend &amp; Chop</b><p>Distinguish directional conditions from less structured price behaviour.</p></article><article><small>ENERGY</small><b>Volatility</b><p>Visual context for changing market activity and expansion.</p></article><article><small>PRESSURE</small><b>VAD</b><p>Buyer and seller pressure context designed for rapid interpretation.</p></article><article><small>EXPANSION</small><b>Explosion</b><p>Evaluate directional expansion and momentum conditions.</p></article><article><small>STRUCTURE</small><b>Levels + VWAP</b><p>Organize important market references and intraday context.</p></article><article><small>DIRECTION</small><b>EMA + Band</b><p>Additional trend and crossover context within the ASR environment.</p></article></div></section>
 <span id="workflow"></span><section class="asr-guide guide-tint" id="getting-started"><span class="section-label">GETTING STARTED</span><h2>A considered path into beta.</h2><p class="guide-lead">For NinjaTrader 8 Desktop futures traders willing to learn the controls, supervise execution and share clear simulation feedback. Registration is open; customer software access is not yet open.</p><div class="guide-grid"><article><span class="guide-number">01 / EXPRESS INTEREST</span><h3>Tell us about your workflow.</h3><p>Submit the short interest form and complete verification. An automatic email acknowledges your submission.</p></article><article><span class="guide-number">02 / REVIEW THE INVITATION</span><h3>Understand participation.</h3><p>After validation, selected testers will receive the scope, requirements and participation details before deciding whether to join.</p></article><article><span class="guide-number">03 / SET UP &amp; TEST</span><h3>Start in simulation.</h3><p>The planned onboarding covers installation, licensing, configuration and supervised simulation checks before feedback is collected.</p></article></div><div class="requirements"><h3>Before you participate</h3><ul><li><strong>Desktop software:</strong> ASR is being developed for NinjaTrader 8 Desktop. This mobile-friendly website is not a mobile trading application.</li><li><strong>Trading environment:</strong> A suitable computer, internet connection and the appropriate platform/data setup will be needed. Exact tested versions and requirements will be confirmed with the invitation.</li><li><strong>Learning and supervision:</strong> Be prepared to understand settings, monitor software behavior and report reproducible issues.</li><li><strong>Costs and compatibility:</strong> Pricing is unannounced. Do not buy hardware, data services or a trading account solely in anticipation of beta access. Supported configurations are still being validated.</li></ul><a class="guide-link" href="support.html">Questions about getting started? →</a></div></section>
-<section class="philosophy" id="philosophy"><div><span class="section-label light">06 — DESIGN PHILOSOPHY</span><h2>Built to earn your trust.</h2><p style="max-width:680px;color:#c7d9da;font-size:17px;line-height:1.75">We’re building ASR to be something we can proudly put our name on—with thoughtful design, honest communication and a commitment to testing before release. Our goal is to earn respect through the quality of our work.</p></div><div class="principles"><p><b>Clarity</b><span>Information should be readable without overwhelming the chart.</span></p><p><b>Control</b><span>Automation should remain configurable by the trader.</span></p><p><b>Integration</b><span>Bars, analysis and execution should behave as one environment.</span></p><p><b>Discipline</b><span>Risk and execution controls are part of the workflow—not an afterthought.</span></p></div></section>
+<section class="philosophy" id="philosophy"><div><span class="section-label light">06 — DESIGN PHILOSOPHY</span><h2>Built to earn your trust.</h2><p>We’re building ASR to be something we can proudly put our name on—with thoughtful design, honest communication and a commitment to testing before release. Our goal is to earn respect through the quality of our work.</p></div><div class="principles"><p><b>Clarity</b><span>Information should be readable without overwhelming the chart.</span></p><p><b>Control</b><span>Automation should remain configurable by the trader.</span></p><p><b>Integration</b><span>Bars, analysis and execution should behave as one environment.</span></p><p><b>Discipline</b><span>Risk and execution controls are part of the workflow—not an afterthought.</span></p></div></section>
 <section class="section release" id="release"><div><span class="section-label">07 — PRIVATE BETA PREPARATION</span><h2>Built carefully.<br>Released deliberately.</h2><p class="large-copy">ASR Trading System is preparing for limited private-beta testing.</p><p>A compiled beta candidate has been prepared. Customer access remains closed while licensing, clean installation and independent simulated playback checks are completed. Pricing and a release date have not been announced. Registering interest does not create an account, reserve a license or guarantee an invitation.</p><div class="release-badge"><i></i><div><b>PRIVATE BETA PREPARATION</b><span>Invitations follow installation, licensing and simulation checks</span></div></div><div class="development-update"><span class="section-label">DEVELOPMENT NOTE · <time datetime="2026-10-14">14 OCTOBER 2026</time></span><h3>Preparing the experience. Validating the software.</h3><p><strong>Website ready for inquiries:</strong> Genuine development screenshots are available, and form delivery plus visitor acknowledgements have been confirmed.</p><p><strong>Software validation remains open:</strong> Playback, order handling, clean installation and licensing checks must be completed before customer access.</p><p><strong>Next:</strong> Publish the tested requirements, onboarding instructions and participation details when those checks are complete. No release date or performance claim is being announced.</p></div></div></section>
 <section class="faq-wrap" id="faq"><span class="section-label">08 — FREQUENTLY ASKED QUESTIONS</span><h2>Know what you're getting.</h2><details><summary>Is ASR available to purchase today?</summary><p>Not yet. ASR is preparing for limited private-beta testing. Public availability and pricing will be announced only after validation and vendor onboarding are complete.</p></details><details><summary>Which trading platform does ASR use?</summary><p>ASR is being developed for NinjaTrader 8 Desktop, with a focus on futures trading.</p></details><details><summary>Can I trade manually as well as automatically?</summary><p>Yes. ASR includes manual controls and configurable execution modes such as Reversal + Pullback and Momentum. Automated order handling requires careful simulation testing.</p></details><details><summary>Does ASR guarantee profitable trades?</summary><p>No. ASR provides software tools, not guaranteed outcomes. Futures trading can result in substantial losses, and simulated results may differ from live trading.</p></details><details><summary>Who is the private beta intended for?</summary><p>Futures traders who use NinjaTrader 8 and are willing to evaluate the ASR workflow in simulation and report issues. ASR requires trader supervision and configuration; the beta is not a promise of trading results.</p></details><details><summary>What is included, and what does it cost?</summary><p>The planned environment brings together ASRPriceBars, ASR indicators and execution controls. Final package contents, pricing, support and license terms will be confirmed before commercial purchase. There is currently no checkout on this website.</p></details><details><summary>What happens after I register interest?</summary><p>Interest is not an invitation or a license reservation. After installation, licensing and simulation checks, selected testers will receive participation details. You will receive an automatic email acknowledging your submission. Check your spam folder if it does not arrive. For help, email support@asrtradingsystem.com.</p></details><details><summary>How will licenses work?</summary><p>Licensing integration is under validation. Device restrictions, customer activation and renewal procedures will be confirmed before customer release.</p></details></section>
-<section class="beta-invite" id="beta"><h2>Interested in the private beta?</h2><p>ASR is preparing a limited testing phase. Register your interest below. If selected after validation, you will receive the access details and testing instructions before deciding whether to participate.</p><p class="contact-notice"><strong>Register your interest.</strong> Complete the verification step after submitting. Please check your inbox and spam folder for an acknowledgement. No payment or trading-account details are requested.</p><form class="beta-form" action="https://formsubmit.co/support@asrtradingsystem.com" method="POST"><input type="hidden" name="Form notice version" value="2026-10-14"><input type="hidden" name="_subject" value="ASR Private Beta Interest — Website Form"><input type="hidden" name="_captcha" value="true"><input type="hidden" name="_next" value="https://asrtradingsystem.com/thank-you.html"><input type="hidden" name="_autoresponse" value="Thank you for registering your interest in the ASR Trading System private beta. This automatic email acknowledges your form submission; it is not an invitation, license reservation or guarantee of access. ASR is still completing validation. If selected, you will receive participation details and testing instructions before deciding whether to join. For questions or to withdraw your beta interest, email support@asrtradingsystem.com. Privacy information: https://asrtradingsystem.com/privacy.html. — ASR Trading System"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"><div class="beta-form-grid"><div class="beta-field"><label for="beta-name">FULL NAME *</label><input id="beta-name" name="Name" type="text" autocomplete="name" maxlength="100" required placeholder="Your name"></div><div class="beta-field"><label for="beta-email">EMAIL ADDRESS *</label><input id="beta-email" name="email" type="email" autocomplete="email" maxlength="180" required placeholder="you@example.com"></div></div><div class="beta-field"><label for="beta-experience">NINJATRADER EXPERIENCE *</label><select id="beta-experience" name="NinjaTrader experience" required><option value="" selected disabled>Select your experience</option><option>New to NinjaTrader</option><option>Less than 1 year</option><option>1–3 years</option><option>3+ years</option></select></div><div class="beta-field"><label for="beta-message">WHAT WOULD YOU LIKE TO TEST? (OPTIONAL)</label><textarea id="beta-message" name="Testing interests" rows="3" maxlength="1000" placeholder="Tell us about your trading workflow"></textarea></div><label class="beta-consent"><input type="checkbox" name="Consent" value="I request contact about my ASR private-beta inquiry; I confirm adult eligibility and acknowledge the Privacy Policy and Website Terms dated 2026-10-14. No unrelated marketing consent." required><span>I request contact about my ASR private-beta inquiry and agree to the use of my details for that purpose. I confirm I am at least 18 and have reached the age of majority where I live. FormSubmit processes this form and sends an acknowledgement. Read the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Website Terms</a>. This is not consent to unrelated marketing.</span></label><button type="submit">SUBMIT BETA INTEREST →</button><p class="form-fine">ASR will use this submission to respond to your private-beta inquiry. It does not enroll you in general promotional emails. You may withdraw your interest by contacting support. Please do not include account numbers, passwords or financial information.</p><p class="form-fine">Submitting does not guarantee access. If an acknowledgement does not arrive, check your spam folder or email <a href="mailto:support@asrtradingsystem.com?subject=ASR%20Private%20Beta%20Interest">support@asrtradingsystem.com</a> for help or to withdraw your interest. Requests are handled by email.</p></form></section>
+<section class="beta-invite" id="beta"><h2>Interested in the private beta?</h2><p>ASR is preparing a limited testing phase. Register your interest below. If selected after validation, you will receive the access details and testing instructions before deciding whether to participate.</p><p class="contact-notice"><strong>Register your interest.</strong> Complete the verification step after submitting. Please check your inbox and spam folder for an acknowledgement. No payment or trading-account details are requested.</p><form class="beta-form" action="https://formsubmit.co/support@asrtradingsystem.com" method="POST"><input type="hidden" name="Form notice version" value="2026-10-14"><input type="hidden" name="_subject" value="ASR Private Beta Interest — Website Form"><input type="hidden" name="_captcha" value="true"><input type="hidden" name="_next" value="https://asrtradingsystem.com/thank-you.html"><input type="hidden" name="_autoresponse" value="Thank you for registering your interest in the ASR Trading System private beta. This automatic email acknowledges your form submission; it is not an invitation, license reservation or guarantee of access. ASR is still completing validation. If selected, you will receive participation details and testing instructions before deciding whether to join. For questions or to withdraw your beta interest, email support@asrtradingsystem.com. Privacy information: https://asrtradingsystem.com/privacy.html. — ASR Trading System"><input class="asr-detail-2" type="text" name="_honey" tabindex="-1" autocomplete="off"><div class="beta-form-grid"><div class="beta-field"><label for="beta-name">FULL NAME *</label><input id="beta-name" name="Name" type="text" autocomplete="name" maxlength="100" required placeholder="Your name"></div><div class="beta-field"><label for="beta-email">EMAIL ADDRESS *</label><input id="beta-email" name="email" type="email" autocomplete="email" maxlength="180" required placeholder="you@example.com"></div></div><div class="beta-field"><label for="beta-experience">NINJATRADER EXPERIENCE *</label><select id="beta-experience" name="NinjaTrader experience" required><option value="" selected disabled>Select your experience</option><option>New to NinjaTrader</option><option>Less than 1 year</option><option>1–3 years</option><option>3+ years</option></select></div><div class="beta-field"><label for="beta-message">WHAT WOULD YOU LIKE TO TEST? (OPTIONAL)</label><textarea id="beta-message" name="Testing interests" rows="3" maxlength="1000" placeholder="Tell us about your trading workflow"></textarea></div><label class="beta-consent"><input type="checkbox" name="Consent" value="I request contact about my ASR private-beta inquiry; I confirm adult eligibility and acknowledge the Privacy Policy and Website Terms dated 2026-10-14. No unrelated marketing consent." required><span>I request contact about my ASR private-beta inquiry and agree to the use of my details for that purpose. I confirm I am at least 18 and have reached the age of majority where I live. FormSubmit processes this form and sends an acknowledgement. Read the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Website Terms</a>. This is not consent to unrelated marketing.</span></label><button type="submit">SUBMIT BETA INTEREST →</button><p class="form-fine">ASR will use this submission to respond to your private-beta inquiry. It does not enroll you in general promotional emails. You may withdraw your interest by contacting support. Please do not include account numbers, passwords or financial information.</p><p class="form-fine">Submitting does not guarantee access. If an acknowledgement does not arrive, check your spam folder or email <a href="mailto:support@asrtradingsystem.com?subject=ASR%20Private%20Beta%20Interest">support@asrtradingsystem.com</a> for help or to withdraw your interest. Requests are handled by email.</p></form></section>
 <section class="contact section" id="contact"><span class="section-label">09 — CONTACT</span><div class="contact-grid"><h2>Talk to ASR.</h2><div><p>For product or beta questions, contact ASR. For a software issue, see what to include in your report on our <a href="support.html">support page</a>.</p><a class="email" href="mailto:support@asrtradingsystem.com">support@asrtradingsystem.com</a><a class="btn primary" href="mailto:support@asrtradingsystem.com?subject=ASR%20Product%20Inquiry">Send Product Inquiry</a></div></div></section>
 </main>
 <footer><div class="footer-top"><a class="brand footer-brand" href="#top"><span class="mark">ASR</span><span>Trading System</span></a><div class="footer-nav"><a href="#platform">Platform</a><a href="#execution">Execution</a><a href="#intelligence">Intelligence</a><a href="#contact">Contact</a></div></div><div class="footer-mid"><p><b>ASR — Adaptive Structure &amp; Response</b> for NinjaTrader 8.</p><div class="legal"><a href="risk.html">Risk Disclosure</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></div></div><p class="fine">Futures trading involves substantial risk and is not suitable for every investor. No software, indicator, strategy or trading tool can guarantee profits or prevent losses. Past performance is not necessarily indicative of future results. ASR Trading System is an independent third-party product and is not affiliated with, endorsed by, or sponsored by NinjaTrader.</p><p class="copy">© 2026 ASR Trading System. All rights reserved.</p></footer>
 </body></html>
+
