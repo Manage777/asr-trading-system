@@ -26,6 +26,24 @@
     structure: {title:'Market structure at a glance', description:'A development capture of the ASR Structure indicator. Its classification describes indicator output, not a guaranteed forecast.', alt:'ASR Structure indicator showing a bearish classification in a development capture', height:256},
     volatility: {title:'Context for changing market activity', description:'A development capture of the ASR Volatility indicator beneath the chart. The classification is descriptive market context.', alt:'ASR Volatility indicator beneath a NinjaTrader price chart', height:338}
   };
+  // Keep the gallery usable if an optional screenshot has not been published yet.
+  image.addEventListener('error', () => {
+    const fallback = 'assets/workspace.png';
+    if (!image.getAttribute('src')?.endsWith('/workspace.png')) {
+      image.src = fallback;
+      image.alt = views.workspace.alt;
+      image.height = views.workspace.height;
+      const caption = document.getElementById('gallery-caption');
+      const description = document.getElementById('gallery-description');
+      if (caption) caption.textContent = views.workspace.title;
+      if (description) description.textContent = 'The selected screenshot is temporarily unavailable. Showing the main workspace instead.';
+      const open = document.getElementById('gallery-open');
+      const original = document.getElementById('gallery-original');
+      if (open) open.href = fallback;
+      if (original) original.href = fallback;
+      document.querySelectorAll('.gallery-switcher button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.image === 'workspace')));
+    }
+  });
   const switcher = document.querySelector('.gallery-switcher');
   const openLink = document.getElementById('gallery-open');
   const originalLink = document.getElementById('gallery-original');
