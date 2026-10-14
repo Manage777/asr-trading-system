@@ -1,0 +1,27 @@
+/* Beta information pages; retain ASR's navy, teal, gold and violet palette. */
+.asr-guide{padding:75px 7vw;background:#f7faf9;color:#15323a}
+.asr-guide h2{font-size:clamp(32px,4.5vw,58px);letter-spacing:-.04em;line-height:1.08;margin:16px 0 22px}
+.guide-lead{max-width:800px;font-size:17px;line-height:1.75;color:#486468}
+.guide-tint{background:linear-gradient(125deg,#edf5f2,#f7faf9)}
+.guide-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:30px 0}
+.guide-grid article{padding:28px;background:#fff;border:1px solid #cbded8;border-top:3px solid #16868a}
+.guide-grid article:nth-child(2){border-top-color:#d3a15d}.guide-grid article:nth-child(3){border-top-color:#8882c1}
+.guide-grid h3{font-size:23px;line-height:1.25;margin:18px 0 12px}
+.guide-grid p,.requirements li,.development-update p,.support-copy p,.support-copy li{font-size:16px;line-height:1.75;color:#486468}
+.guide-number{font-size:11px;letter-spacing:.12em;font-weight:800;color:#146e77}
+.requirements,.development-update{padding:28px;border:1px solid #c5dad4;margin-top:30px;background:#f7faf9}
+.requirements h3,.development-update h3{font-size:24px;line-height:1.3;margin:12px 0 18px;color:#15323a}
+.requirements ul,.support-copy ul,.support-copy ol{padding-left:22px}.requirements li,.support-copy li{margin-bottom:12px}
+.guide-link,.support-copy a:not(.btn){color:#116773;text-underline-offset:4px;font-weight:700}
+.mode-table-wrap{overflow-x:auto;margin-top:30px;border:1px solid #bfd6cf}
+.mode-table{width:100%;border-collapse:collapse;min-width:620px;font-size:15px;line-height:1.65}
+.mode-table caption{text-align:left;padding:16px 20px;font-weight:750;background:#e7f1ed}
+.mode-table th,.mode-table td{padding:20px;text-align:left;vertical-align:top;border-bottom:1px solid #cbded8}
+.mode-table thead{background:#123640;color:#fff}.mode-table tbody th{width:23%;color:#145d67}.mode-table tbody tr:last-child>*{border-bottom:0}
+.guide-note{font-size:14px;color:#4b666b;line-height:1.7}
+.screenshot-guide{padding:20px 24px;border-left:3px solid #d3a15d;background:#14343e;margin-top:24px;color:#d6e5e5}
+.screenshot-guide>strong{color:#edc58d}.screenshot-guide p{font-size:14px;line-height:1.9;margin:9px 0 0}.screenshot-guide b{color:#f1f6f4}
+.support-copy{max-width:850px}.support-copy h2{font-size:28px;margin-top:36px;color:#15323a}.support-copy h3{font-size:20px;color:#15323a}
+.support-copy .btn.primary{background:linear-gradient(120deg,#164d5b,#16868a);color:#fff;border-color:#146e77;line-height:1.5}
+.support-copy .guide-note{font-size:14px}.support-copy .actions{flex-wrap:wrap}
+@media(max-width:800px){.asr-guide{padding:55px 6vw}.guide-grid{grid-template-columns:1fr}.guide-grid article{padding:23px}.requirements,.development-update{padding:22px}.mode-table th,.mode-table td{padding:15px}.screenshot-guide{padding:16px}}
